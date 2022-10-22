@@ -28,7 +28,9 @@ namespace EmployeeManagement.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {   
-            //we have created seed() as an extension() and moved our seed data code to seed()
+            /*we have created seed() as an extension() and moved our seed data code to seed()
+             .seed() issuing primary key violation & empdata list is showing 1 record instead of 2- need to look
+             */
             modelBuilder.Seed();
             base.OnModelCreating(modelBuilder);
 
